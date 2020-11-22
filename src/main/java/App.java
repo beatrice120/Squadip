@@ -16,8 +16,12 @@ public class App {
         get("/hero-form", (request, response) -> {
             return new ModelAndView(new HashMap(), "hero-form.hbs");
         }, new HandlebarsTemplateEngine());
+        get("/squad-form", (request, response) -> {
+            return new ModelAndView(new HashMap(), "squad-form.hbs");
+        }, new HandlebarsTemplateEngine());
 
-      //  get("/favorite_photos", (request, response) -> {
+
+        //  get("/favorite_photos", (request, response) -> {
             //return new ModelAndView(new HashMap(), "favorite_photos.hbs");
       //  }, new HandlebarsTemplateEngine());//
     }

@@ -20,13 +20,21 @@ font-size:30px;
 
 }
 .form{
-width:70%;
+width:90%;
 height:40%;
 margin-left:8%;
+background-color:black;
 }
 .btns{
 text-align:center;
 background-color:black;
 color:white;
+font-weight:bold;
+}
+.p{
+color:white;}
+h2{
+color:white;
+text-align:center;
 font-weight:bold;
 }

@@ -1,17 +1,15 @@
 {{#partial "content"}}
-    <section class="landing-pg">
-        <div class="land-left"></div>
-        <div class="land-right"></div>
-        <form class="form" action="/new/hero" method="post">
-            <h1>Create Your Own Hero Please!!!</h1><br><br><br>
 
-            <div class="form"><input type="text" placeholder="Hero's name" name="name" required class="form-control"></div><br><br>
-            <div class="form"><input type="number" placeholder="Hero's age" name="age" required class="form-control"></div><br><br>
-            <div class="form"><input type="text" placeholder="Hero's special powers" name="power" required class="form-control"></div><br><br>
-            <div class="form"><input type="text" placeholder="Hero's weakness" name="weakness" required class="form-control"></div>
+    <h1>Create Your Own Hero Please!!!</h1><br><br><br>
+            <h2>FILL THE FORM!!!</h2><br><br><br>
+        <form class="form" action="/new/hero" method="post">
+            <div class="form"> <label for="name" class="p">HERO NAME</label><br><input type="text" placeholder="enter hero name" name="name" required ></div><br><br>
+            <div class="form"><label for="age" class="p">HERO AGE</label><br><input type="number" placeholder="Hero's age" name="age" required ></div><br><br>
+            <div class="form"><label for="power" class="p">HERO POWER</label><br><input type="text" placeholder="Hero's special powers" name="power" required ></div><br><br>
+            <div class="form"><label for="weakness" class="p">HERO WEAKNESS</label><br><input type="text" placeholder="Hero's weakness" name="weakness" required ></div><br><br>
 
             <center> <input class="btns" type="submit"></center>
         </form>
-    </section>
+
 {{/partial}}
 {{> layout.hbs}}
