@@ -19,3 +19,14 @@ color:white;
 font-size:30px;
 
 }
+.form{
+width:70%;
+height:40%;
+margin-left:8%;
+}
+.btns{
+text-align:center;
+background-color:black;
+color:white;
+font-weight:bold;
+}
