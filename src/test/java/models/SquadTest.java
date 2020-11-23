@@ -11,64 +11,27 @@ public class SquadTest {
         assertTrue(newSquad instanceof Squad);
     }
     @Test
-    public void newSquad_getName_String() {
+    public void newSquad_getName_String() {// testing if it will be receiving names of squad inserted
         Squad newSquad = Squad.setUpNewSquad();
-        assertEquals("Avengers",newSquad.getSquadName());
+        assertEquals("super",newSquad.getSquadName());
     }
     @Test
     public void newSquad_getSize_Int() {
-        Squad newSquad = Squad.setUpNewSquad();
-        assertEquals(5,newSquad.getSize());
+        Squad newSquad = Squad.setUpNewSquad();// testing if it will be accepting squad size
+        assertEquals(3,newSquad.getSize());
     }
     @Test
     public void newSquad_getPower_String() {
-        Squad newSquad = Squad.setUpNewSquad();
+        Squad newSquad = Squad.setUpNewSquad();//testing if it will be accepting user to enter squad power
         assertEquals("Infinity Stone",newSquad.getReasons());
     }
     @Test
-    public void newSquad_getInstances_true() {
+    public void newSquad_getInstances_true() {// testing if it will be accepting displaying all the squad
         Squad newSquad = Squad.setUpNewSquad();
         Squad another = Squad.setUpNewSquad();
         assertTrue(Squad.getInstances().contains(newSquad));
         assertTrue(Squad.getInstances().contains(another));
     }
-    @Test
-    public void newSquad_getSquadMembers_Array() {
-        Squad newSquad = Squad.setUpNewSquad();
-        Hero newHero = Hero.setUpNewHero();
-        Hero newHero1 = Hero.setUpNewHero1();
-        newSquad.setSquadMembers(newHero);
-        assertEquals("Atemba",newSquad.getSquadMembers().get(0).getName());
-    }
 
-    @Test
-    public void newSquad_allTestSquadMembers_Array() {
-        Hero newHero = Hero.setUpNewHero();
-        Squad newSquad = Squad.setUpNewSquad();
-        newSquad.clearAllSquadMembers();
-        newSquad.getSquadMembers().add(newHero);
-        newSquad.getSquadMembers().add(newHero);
-        assertEquals("Atemba",newSquad.getSquadMembers().get(0).getName());
-    }
-    @Test
-    public void addMember_addsMemberToSquad_Hero(){
-        Hero newHero = Hero.setUpNewHero();
-        Squad testSquad = Squad.setUpNewSquad();
-        Squad newSquad = Squad.findBySquadId(1);
-        newSquad.clearAllSquadMembers();
-        newSquad.getSquadMembers().add(newHero);
-        newSquad.getSquadMembers().add(newHero);
-        assertEquals(2,newSquad.getSquadMembers().size());
-    }
-
-    @Test
-    public void setNewMember_hero(){
-        Hero.clearAllHeroes();
-        Hero newHwero = Hero.setUpNewHero();
-        Squad testSquad = Squad.setUpNewSquad();
-        testSquad.setSquadMembers(newHwero);
-
-        assertEquals(1,testSquad.getSquadMembers().get(0).getId());
-    }
 
 }
