@@ -21,7 +21,23 @@ $ JDK - Java Development Kit
 $ Maven
 $ Gradle
 $ An IDE - Intellij
+## Language used
+Java - The language used
+Intellij Idea - Intergated development
+Spark - Framework
 
 ## DEMO
 ![startingpage](src/main/resources/public/images/Hello.png)
+![heroform](src/main/resources/public/images/Hform.png)
+![successpage](src/main/resources/public/images/Sas.png)
+![after submit](src/main/resources/public/images/After.png)
+![squad form](src/main/resources/public/images/Sform.png)
+![squad success](src/main/resources/public/images/Ssucss.png)
+![squad view](src/main/resources/public/images/Vs.png)
+![squad test](src/main/resources/public/images/Stest.png)
+![hero test](src/main/resources/public/images/Stest.png)
 
+## License
+
+
+This project is licensed under the MIT License - see the LICENSE file for details
