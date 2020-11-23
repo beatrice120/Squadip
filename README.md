@@ -23,4 +23,5 @@ $ Gradle
 $ An IDE - Intellij
 
 ## DEMO
-![startingpage](/home/akilah-student/Downloads/Squadip/src/main/resources/public/images/hello.png)
+![startingpage](src/main/resources/public/images/Hello.png)
+
