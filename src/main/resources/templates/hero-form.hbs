@@ -1,14 +1,33 @@
 {{#partial "content"}}
+<style>
+h1{
+color:darkred;
+ font-family: "Times New Roman", Times, serif;
+ font-weight:bold;
+  text-align:center;}
+ .form{background-color:grey;
+ text-align:center;
 
-    <h1>Create Your Own Hero Please!!!</h1><br><br><br>
-            <h2>FILL THE FORM!!!</h2><br><br><br>
+ }
+ p{
+ color:white;}
+ .button{
+ background-color:black;
+ width:10%;
+ height:30%;
+ }
+
+</style>
+
+<h1>Create Your Own Hero Please!!!</h1><br><br>
+            <h1>Fill The Form!!!</h1><br><br><br>
         <form class="form" action="/new/hero" method="post">
-            <div class="form"> <label for="name" class="p">HERO NAME</label><br><input type="text" placeholder="enter hero name" name="name" required ></div><br><br>
-            <div class="form"><label for="age" class="p">HERO AGE</label><br><input type="number" placeholder="Hero's age" name="age" required ></div><br><br>
-            <div class="form"><label for="power" class="p">HERO POWER</label><br><input type="text" placeholder="Hero's special powers" name="power" required ></div><br><br>
-            <div class="form"><label for="weakness" class="p">HERO WEAKNESS</label><br><input type="text" placeholder="Hero's weakness" name="weakness" required ></div><br><br>
+            <div class="form"> <label for="name" class="p"><p>ENTER HERO NAME</p></label><br><input type="text" placeholder="enter hero name" name="name" required ></div><br><br>
+            <div class="form"><label for="age" class="p"><p>ENTER HERO AGE</p></label><br><input type="number" placeholder="enter age" name="age" required ></div><br><br>
+            <div class="form"><label for="power" class="p"><p>ENTER HERO POWER</p></label><br><input type="text" placeholder="your Hero special powers" name="power" required ></div><br><br>
+            <div class="form"><label for="weakness" class="p"><p>ENTER HERO WEAKNESS</p></label><br><input type="text" placeholder="Hero weakness" name="weakness" required ></div><br><br>
 
-            <center> <input class="btns" type="submit"></center>
+            <center> <input class="button" type="submit"></center>
         </form>
 
 {{/partial}}
