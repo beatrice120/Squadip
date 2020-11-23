@@ -1,8 +1,7 @@
 {{#partial "content"}}
-    <section class="landing-pg">
-        <div class="land-left"></div>
-        <div class="land-right"></div>
+
         <form class="form" action="/squad/new" method="post">
+
             <h1>Create Your Squad</h1>
             <br><br><br>
 
@@ -16,11 +15,11 @@
 
             </div>
             <div class="form">
-                <label for="name" class="p">Reason</label><br> <br> <input type="text" placeholder="Enter your reason" name="cause"    required>
+                <label for="name" class="p">Reasons</label><br> <br> <input type="text" placeholder="Enter your reason" name="cause"    required>
 
             </div>
             <center>  <input type="submit" class="btns"></center>
         </form>
-    </section>
+
 {{/partial}}
 {{> layout.hbs}}

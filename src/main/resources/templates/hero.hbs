@@ -1,12 +1,9 @@
 <!-- this ages shows the current hero-->
 {{#partial "content"}}
-    <section class="landing-pg">
-        <div class="land-left">
-        </div>
-        <div class="land-right">
-        </div>
-        <h2> <a class="btns" href="/hero-form" >Create Your Hero</a> <br><br> CURRENT HEROES</h2>
-        <div class="heroes">
+    <section class="laz">
+
+        <h2> <a class="btns" href="/hero-form" >Create Your Hero</a> <br><br> CREATED HEROES</h2>
+        <div class="hhy">
             {{#each hero}}
                 <div class="hero-item">
 
@@ -14,9 +11,9 @@
                     <p>Age: {{ age }}</p>
                     <p>Special power: {{ power }}</p>
                     <p>Weakness: {{ weakness }}</p>
-                    <p>Id: {{ id }}</p>
-
+                    <p>Id: {{id }}</p>
                     <a href="/squad" class="btns">Add {{ name }} To Squad</a>
+                  <br> <a class="btn" href="/">Back on Home</a>
                 </div>
 
             {{/each}}
