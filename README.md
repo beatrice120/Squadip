@@ -23,12 +23,4 @@ $ Gradle
 $ An IDE - Intellij
 
 ## DEMO
-![startingpage](images/src/main/resources/public/images/hello.png)
-![hero form](images/src/main/resources/public/images/heroform..png)
-![success](images/src/main/resources/public/images/success.png
-![startingpage](images/src/main/resources/public/images/after creating.png
-![startingpage](images/src/main/resources/public/images/hello.png)
-![startingpage](images/src/main/resources/public/images/hello.png)
-![startingpage](images/src/main/resources/public/images/hello.png)
-![startingpage](images/src/main/resources/public/images/hello.png)
-![startingpage](images/src/main/resources/public/images/hello.png)
+![startingpage](/home/akilah-student/Downloads/Squadip/src/main/resources/public/images/hello.png)
