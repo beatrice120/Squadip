@@ -1,0 +1,57 @@
+<!--showing current squad created-->
+
+{{#partial "content"}}
+    <section class="landing-pg">
+        <div class="land-left">
+        </div>
+        <div class="land-right">
+        </div>
+        <div class="squad">
+            <div id="newMember">
+                {{#if squads}}
+                   <h2> AVAILABLE SQUADS
+                    </h2>
+                    {{#each squads}}
+                        <div class="squad-cont">
+
+                            <div>
+                                <p>{{ squadName }} </p>
+
+                                <p>Id: {{squadId}}</p>
+                                <p>Purpose: {{reasons}}</p>
+                                <p>Max participants: {{ size }}</p>
+                                <br><br>
+
+                                {{#each squadMembers}}
+                                    <div class="member-cont">
+                                        <h5>Name: {{this.name}}</h5>
+                                        <h5>Power: {{power}}</h5>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    {{/each}}
+                {{else}}
+                    <h2>Please create a squad to continue</h2>
+                {{/if}}
+            </div>
+                <h2>LIST OF HERO</h2>
+                {{#each heroes}}
+                    <div class="hero-item">
+
+                        <div class="hero-detail">
+                            <p>Name: {{name}}</p>
+                            <p>Super power: {{ power }}</p>
+                            <a class="btns" href="/squad/new/{{id}}">Add this member To Squad</a>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        <h2>
+            <a class="btns" href="/squad-form">Create Your Squad</a>
+            <br><br>
+
+    </section>
+{{/partial}}
+
+{{> layout.hbs}}

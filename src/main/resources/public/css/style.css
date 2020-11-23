@@ -1,40 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.2s ease-out;
-  font-family: 'Abel', sans-serif;
-  background-image:url("https://img.freepik.com/free-vector/superhero-gallant-pose_24381-736.jpg?size=626&ext=jpg");
-  background-image:no-repeat;
-}
-h1{
-color:green;
-text-align:center;
-font-family:sans-serif;
-font-weight:bold;
-text-sizing:30px;}
 p{
-color:white;
-font-size:30px;
+color:blue;}
 
-}
-.form{
-width:90%;
-height:40%;
-margin-left:8%;
-background-color:black;
-}
-.btns{
-text-align:center;
-background-color:black;
-color:white;
-font-weight:bold;
-}
-.p{
-color:white;}
-h2{
-color:white;
-text-align:center;
-font-weight:bold;
-}
+body{
+background-color:blue;}

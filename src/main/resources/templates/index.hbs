@@ -1,0 +1,33 @@
+
+{{#partial "content"}}
+    <section class="landing-pg">
+        <div class="land-left">
+        </div>
+        <div class="land-right">
+        </div>
+        {{#if squads}}
+            Welcome {{squadName}} {{name}}
+            <p>You have the following Squads:</p>
+            <p>Click on the name for more details</p>
+            {{#each squads}}
+                <p><a href="/squad/{{id}}">{{name}}</a></p>
+            {{/each}}
+        {{ else }}
+            <p>You have no squads at the moment.</p>
+        {{/if}}
+
+      
+
+        </div>
+
+
+
+
+        <div class="hero-desc">
+            <h3>No Human is Limited</h3>
+            <a href="/hero-form"><button class="hero-btn btns">Create Hero</button></a>
+
+        </div>
+    </section>
+{{/partial}}
+{{> layout.hbs}}
